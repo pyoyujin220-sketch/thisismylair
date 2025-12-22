@@ -5,44 +5,64 @@ public class SlotMoving : MonoBehaviour
     // 플레이어가 이동할 슬롯 위치들
     public Transform[] slots;
 
-    public float fixedY = -2.9f;
     public float fixedZ = 0.0f;
+    public float fixedY = -2.9f;
+    public float hiddenY = -4.5f;
+
+    public bool bIsHidden = false;
 
     int currentSlot = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // 게임 시작 시 가운데 슬롯으로 이동
-        MoveToSlot(currentSlot);
+        UpdatePosition();
     }
-
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.A))
         {
-            MoveToSlot(0);
+            ChangeSlot(0);
         }
         if(Input.GetKeyDown(KeyCode.S))
         {
-            MoveToSlot(1);
+            ChangeSlot(1);
         }
         if(Input.GetKeyDown(KeyCode.D))
         {
-            MoveToSlot(2);
+            ChangeSlot(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ToggleHide();
         }
     }
 
-    void MoveToSlot(int index)
+    // 슬롯 변경 (숨김 상태는 유지됨)
+    void ChangeSlot(int index)
     {
-        // 슬롯 번호 저장
         currentSlot = index;
+        UpdatePosition();
+    }
 
-        // 플레이어 위치를 해당 슬롯 위치로 이동
+    void ToggleHide()
+    {
+        bIsHidden = !bIsHidden;
+
+        UpdatePosition();
+    }
+
+    // 위치 계산 함수
+    void UpdatePosition()
+    {
+        // 삼항 연산자 조건 ? 참 : 거짓;
+        float targetY = bIsHidden ? hiddenY : fixedY;
+
+        // 최종 위치 적용
         transform.position = new Vector3(
-            slots[index].position.x,
-            fixedY,
+            slots[currentSlot].position.x,
+            targetY,
             fixedZ);
     }
 }
