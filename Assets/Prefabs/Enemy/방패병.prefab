@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 8356488400166728147}
   - component: {fileID: 6457061166225168138}
   - component: {fileID: 4843370202825603221}
-  - component: {fileID: 9129858386605172559}
+  - component: {fileID: 8228052031224365581}
   m_Layer: 0
   m_Name: "\uBC29\uD328\uBCD1"
   m_TagString: Untagged
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHP: 100
-  currentHP: 0
+  currentHP: 100
 --- !u!212 &6457061166225168138
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -340,7 +340,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9129858386605172559
+--- !u!114 &8228052031224365581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -349,10 +349,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8639622970655324344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3696fc2b7648515488d69d4bae2e5c77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d4969004b939404eaa9990f2adb15fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::hang_around
-  moveSpeed: 3
+  moveSpeed: 2
   leftLimit: -4
   rightLimit: 4
 --- !u!1001 &6416049103361784711
@@ -591,6 +591,10 @@ PrefabInstance:
     - target: {fileID: 4794537250951089931, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5338514223928181048, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
