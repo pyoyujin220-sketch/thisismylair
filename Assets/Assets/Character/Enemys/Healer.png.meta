@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 3875faea3ba3cf140aa55f079a1d8912
+guid: 46d14c69bff29c546bc7e82e4d6e4ca7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6937817954938267909
-    second: 2_0
+      213: -3152180383845805149
+    second: Healer_0
+  - first:
+      213: -1577015749045243486
+    second: Healer_1
+  - first:
+      213: -4539535395494678419
+    second: Healer_2
+  - first:
+      213: -4618723040967708213
+    second: Healer_3
+  - first:
+      213: 4355858077975703455
+    second: Healer_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2_0
+      name: Healer_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 342
-        height: 571
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 286
+        y: 4001
+        width: 255
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5092c600ca4184060800000000000000
-      internalID: 6937817954938267909
+      spriteID: 3a39ae054a43144d0800000000000000
+      internalID: -3152180383845805149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Healer_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1256
+        width: 1651
+        height: 3055
+      alignment: 9
+      pivot: {x: 0.57, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a136f818805d1ae0800000000000000
+      internalID: -1577015749045243486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Healer_2
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 3771
+        width: 244
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d603a3afb945001c0800000000000000
+      internalID: -4539535395494678419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Healer_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3704
+        width: 456
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc135338ddff6efb0800000000000000
+      internalID: -4618723040967708213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Healer_4
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 0
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9fe1c5f7dd137c30800000000000000
+      internalID: 4355858077975703455
       vertices: []
       indices: 
       edges: []
@@ -125,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8257b3d3fd8201b4a90546fe35eb2423
+    spriteID: 5b3708bd02cb2f442a2d252cca1e8b76
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2_0: 6937817954938267909
+      Healer_0: -3152180383845805149
+      Healer_1: -1577015749045243486
+      Healer_2: -4539535395494678419
+      Healer_3: -4618723040967708213
+      Healer_4: 4355858077975703455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

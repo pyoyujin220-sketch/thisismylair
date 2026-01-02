@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.1, y: -0.54, z: 0}
-  m_LocalScale: {x: 1.4683087, y: 1.9755437, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5682161498523215366}
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -1577015749045243486, guid: 46d14c69bff29c546bc7e82e4d6e4ca7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -195,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1332156967826753694, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.57
+      value: 3.2
       objectReference: {fileID: 0}
     - target: {fileID: 1332156967826753694, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -221,6 +221,14 @@ PrefabInstance:
       propertyPath: targetHealth
       value: 
       objectReference: {fileID: 3495811476011281780}
+    - target: {fileID: 3751490591080161374, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751490591080161374, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4794537250951089931, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
       propertyPath: m_Name
       value: EnemyHPBar
