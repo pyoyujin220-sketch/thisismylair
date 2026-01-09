@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 9ce4c0e3dfb355342b1bcdaaaa568884
+guid: d2770684d0e3ef04faf17d248bfa6508
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1383701716351165481
-    second: "\uC5C4\uD3D0\uBB3C_\uC6B0_0"
+      213: -3378570348197595719
+    second: Healer_ver2_0
+  - first:
+      213: -4273159818196910766
+    second: Healer_ver2_1
+  - first:
+      213: -8023174278822934625
+    second: Healer_ver2_2
+  - first:
+      213: 7140381056249437879
+    second: Healer_ver2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 4096
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +81,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC5C4\uD3D0\uBB3C_\uC6B0_0"
+      name: Healer_ver2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 548
-        height: 293
+        x: 284
+        y: 3999
+        width: 259
+        height: 318
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 924a53e3165e33310800000000000000
-      internalID: 1383701716351165481
+      spriteID: 9b5b3033b28ec11d0800000000000000
+      internalID: -3378570348197595719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Healer_ver2_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1237
+        width: 1635
+        height: 3081
+      alignment: 9
+      pivot: {x: 0.59, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d76e719cfa2b4c0800000000000000
+      internalID: -4273159818196910766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Healer_ver2_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 3702
+        width: 460
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9745b38085f7a090800000000000000
+      internalID: -8023174278822934625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Healer_ver2_3
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 0
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be1da24dbab71360800000000000000
+      internalID: 7140381056249437879
       vertices: []
       indices: 
       edges: []
@@ -125,8 +200,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uC5C4\uD3D0\uBB3C_\uC6B0_0": 1383701716351165481
+      Healer_ver2_0: -3378570348197595719
+      Healer_ver2_1: -4273159818196910766
+      Healer_ver2_2: -8023174278822934625
+      Healer_ver2_3: 7140381056249437879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

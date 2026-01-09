@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6457061166225168138}
   - component: {fileID: 4843370202825603221}
   m_Layer: 0
-  m_Name: Warrior
+  m_Name: Debuffer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

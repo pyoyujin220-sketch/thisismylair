@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9ce4c0e3dfb355342b1bcdaaaa568884
+guid: 62f9f8e963bc44643b99fa06cd0ea702
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1383701716351165481
-    second: "\uC5C4\uD3D0\uBB3C_\uC6B0_0"
+      213: 701960432084883088
+    second: Magician_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC5C4\uD3D0\uBB3C_\uC6B0_0"
+      name: Magician_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 548
-        height: 293
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 64
+        width: 400
+        height: 873
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 924a53e3165e33310800000000000000
-      internalID: 1383701716351165481
+      spriteID: 0969cc83b4dddb900800000000000000
+      internalID: 701960432084883088
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4a517c4583de46f439645e1eacd993d5
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uC5C4\uD3D0\uBB3C_\uC6B0_0": 1383701716351165481
+      Magician_0: 701960432084883088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
