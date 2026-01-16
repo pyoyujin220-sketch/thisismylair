@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
 
-    [Header("Targeting")]
+    [Header("Projectile")]
     public GameObject projectilePrefab;
 
     [Header("References")]
@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
         // firePoint 자동 생성 / 탐색
         firePoint = transform.Find("FirePoint");
 
-        if( firePoint != null )
+        if( firePoint == null )
         {
             GameObject fp = new GameObject("FirePoint");
             fp.transform.SetParent(transform);
