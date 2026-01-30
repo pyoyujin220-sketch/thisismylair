@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5707198638739505970}
   - component: {fileID: 1723893544315490869}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,8 +100,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1982963775556525246}
   - component: {fileID: 8356488400166728147}
-  - component: {fileID: 4843370202825603221}
-  m_Layer: 0
+  - component: {fileID: 6890308749052011033}
+  - component: {fileID: -4827315107183433292}
+  m_Layer: 7
   m_Name: Magician
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,16 +140,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHP: 100
   currentHP: 100
---- !u!61 &4843370202825603221
-BoxCollider2D:
+--- !u!65 &6890308749052011033
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8639622970655324344}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -157,34 +155,39 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.5}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 1}
-    newSize: {x: 0.09765625, y: 0.24414062}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.6, y: 3.492}
-  m_EdgeRadius: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6, y: 3.5, z: 1}
+  m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!54 &-4827315107183433292
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639622970655324344}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1001 &7317156541443651195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -285,13 +288,25 @@ PrefabInstance:
       propertyPath: targetHealth
       value: 
       objectReference: {fileID: 8356488400166728147}
+    - target: {fileID: 2843712126020879663, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4794537250951089931, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4794537250951089931, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5338514223928181048, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200869124409351418, guid: caad189abb37a304e8b468ad5eb9947c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

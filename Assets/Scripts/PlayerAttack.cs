@@ -1,67 +1,50 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-
     [Header("Projectile")]
     public GameObject projectilePrefab;
+
+    [Header("Fire Point")]
+    public Transform firePoint;   // ì§ì ‘ ì§€ì •
 
     [Header("References")]
     public CrosshairFollow crosshairFollow;
 
-    Transform firePoint;
     Camera mainCamera;
 
     void Awake()
     {
-        // ¸ŞÀÎ Ä«¸Ş¶ó Å½»ö
         mainCamera = Camera.main;
-
-        // firePoint ÀÚµ¿ »ı¼º / Å½»ö
-        firePoint = transform.Find("FirePoint");
-
-        if( firePoint == null )
-        {
-            GameObject fp = new GameObject("FirePoint");
-            fp.transform.SetParent(transform);
-            fp.transform.localPosition = Vector3.zero;
-            firePoint = fp.transform;
-        }
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
     }
 
     void Fire()
     {
-        // Å©·Î½ºÇì¾î È­¸é ÁÂÇ¥
-        Vector2 mouseScreenPos = crosshairFollow.GetCrosshairScreenPosition();
+        Vector2 crosshairPos = crosshairFollow.GetCrosshairScreenPosition();
+        Ray ray = mainCamera.ScreenPointToRay(crosshairPos);
 
-        // È­¸éÀ» ¿ùµå ÁÂÇ¥·Î
-        Vector3 mouseWorldPos = mainCamera.ScreenToWorldPoint(mouseScreenPos);
-        mouseWorldPos.z = 0.0f;
+        // ë°œì‚¬ ì´í™íŠ¸
+        GameObject bullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+        bullet.GetComponent<Projectile>().Init(ray.direction);
 
-        // ¹ß»ç ¹æÇâ °è»ê
-        Vector2 dir = (mouseWorldPos-firePoint.position).normalized;
-
-        // Åõ»çÃ¼ »ı¼º
-        GameObject bullet = Instantiate(
-            projectilePrefab,
-            firePoint.position,
-            Quaternion.identity
-            );
-
-        // “‡Çâ Àü´Ş
-        bullet.GetComponent<Projectile>().Init(dir);
+        // ë°ë¯¸ì§€ íŒì • (ì¦‰ì‹œ)
+        if (Physics.Raycast(ray, out RaycastHit hit, 100f))
+        {
+            Health hp = hit.collider.GetComponent<Health>();
+            if (hp != null)
+            {
+                hp.TakeDamage(20f);
+            }
+        }
     }
 
-    // Update is called once per frame
+
+
+
+
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Fire();
         }
