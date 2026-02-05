@@ -13,6 +13,8 @@ public class SlotMoving : MonoBehaviour
 
     int currentSlot = 1;
 
+    //public Health currentBlockHp = slots[currentSlot].GetCurrentHp();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

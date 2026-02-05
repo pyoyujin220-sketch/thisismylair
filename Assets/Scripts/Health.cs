@@ -33,6 +33,11 @@ public class Health : MonoBehaviour
         return currentHP / maxHP;
     }
 
+    //public float GetCurrentHp()
+    //{
+    //    return currentHP;
+    //}
+
     // Update is called once per frame
     void Update()
     {

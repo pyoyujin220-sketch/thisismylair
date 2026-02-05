@@ -803,6 +803,14 @@ PrefabInstance:
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 5194000961706388170, guid: ef582f6e4ab33b544b931d366bfc3a55, type: 3}
+    - target: {fileID: 6444647162338256231, guid: 455d74a492080b247a6e0c876fc2ef2d, type: 3}
+      propertyPath: fillImage
+      value: 
+      objectReference: {fileID: 7848231280098290377}
+    - target: {fileID: 6444647162338256231, guid: 455d74a492080b247a6e0c876fc2ef2d, type: 3}
+      propertyPath: targetHealth
+      value: 
+      objectReference: {fileID: 1344372508}
     - target: {fileID: 6925938903906829118, guid: 455d74a492080b247a6e0c876fc2ef2d, type: 3}
       propertyPath: m_Layer
       value: 6
