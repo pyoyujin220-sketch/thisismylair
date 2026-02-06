@@ -9,6 +9,9 @@ public class PlayerVisual : MonoBehaviour
 
     SpriteRenderer sr;
 
+    // 공격 후 공격 스프라이트를 유지하고 있는 시간
+    public float attackTime = 0.4f;
+
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
