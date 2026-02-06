@@ -13,6 +13,8 @@ public class PlayerAttack : MonoBehaviour
 
     Camera mainCamera;
 
+    public PlayerVisual playerVisual;
+
     void Awake()
     {
         mainCamera = Camera.main;
@@ -20,6 +22,8 @@ public class PlayerAttack : MonoBehaviour
 
     void Fire()
     {
+        playerVisual.SetAttack();
+
         Vector2 crosshairPos = crosshairFollow.GetCrosshairScreenPosition();
         Ray ray = mainCamera.ScreenPointToRay(crosshairPos);
 
@@ -36,8 +40,8 @@ public class PlayerAttack : MonoBehaviour
                 hp.TakeDamage(20f);
             }
         }
-    }
 
+    }
 
 
 

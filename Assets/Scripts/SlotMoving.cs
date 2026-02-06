@@ -13,6 +13,8 @@ public class SlotMoving : MonoBehaviour
 
     int currentSlot = 1;
 
+    PlayerVisual playerVisual;
+
     //public Health currentBlockHp = slots[currentSlot].GetCurrentHp();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -51,8 +53,18 @@ public class SlotMoving : MonoBehaviour
     void ToggleHide()
     {
         bIsHidden = !bIsHidden;
-
         UpdatePosition();
+
+        if (bIsHidden)
+        {
+            playerVisual.SetCover();
+        }
+        else
+        {
+            playerVisual.SetIdle();
+        }
+            
+
     }
 
     // 위치 계산 함수

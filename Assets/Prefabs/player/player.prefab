@@ -379,6 +379,10 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5793660430568174107, guid: dcbd7ab30584fe346aa35eae69c21b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8890995392538690813, guid: dcbd7ab30584fe346aa35eae69c21b52, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
