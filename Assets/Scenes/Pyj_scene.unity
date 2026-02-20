@@ -268,6 +268,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Reviver
       objectReference: {fileID: 0}
+    - target: {fileID: 3754883541030238045, guid: d885b4f3e4ce96e488b029ede707f4e2, type: 3}
+      propertyPath: fillImage
+      value: 
+      objectReference: {fileID: 1690160429}
+    - target: {fileID: 3754883541030238045, guid: d885b4f3e4ce96e488b029ede707f4e2, type: 3}
+      propertyPath: targetHealth
+      value: 
+      objectReference: {fileID: 632792426}
     - target: {fileID: 3846481649702904459, guid: d885b4f3e4ce96e488b029ede707f4e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.23615003
@@ -457,6 +465,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &632792426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3495811476011281780, guid: d885b4f3e4ce96e488b029ede707f4e2, type: 3}
+  m_PrefabInstance: {fileID: 260152062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d8c6b8995f5ad44bc975fac3ad7860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
 --- !u!1001 &706011140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -724,6 +743,17 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &909669935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3495811476011281780, guid: 5a1841a5ae997424a839be0d5ef3bc6b, type: 3}
+  m_PrefabInstance: {fileID: 2033689832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d8c6b8995f5ad44bc975fac3ad7860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
 --- !u!1001 &923721634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1209,6 +1239,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHP: 250
   currentHP: 250
+--- !u!114 &1363202404 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5046044665019209298, guid: 5a1841a5ae997424a839be0d5ef3bc6b, type: 3}
+  m_PrefabInstance: {fileID: 2033689832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1413572870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,6 +1376,7 @@ MonoBehaviour:
   idleSprite: {fileID: 21300000, guid: 80983efd76727d04395e11c3051ca15e, type: 3}
   attackSprite: {fileID: 21300000, guid: 0995d6f0e3177e54bae029a2b10bdf12, type: 3}
   coverSprite: {fileID: 21300000, guid: df33b6ceb46406d4cb5ec452ad65bc00, type: 3}
+  attackTime: 0.4
 --- !u!4 &1556928250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3903832794022318976, guid: 455d74a492080b247a6e0c876fc2ef2d, type: 3}
@@ -1523,6 +1565,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8890995392538690813, guid: dcbd7ab30584fe346aa35eae69c21b52, type: 3}
   m_PrefabInstance: {fileID: 1593297097}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1690160429 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5046044665019209298, guid: d885b4f3e4ce96e488b029ede707f4e2, type: 3}
+  m_PrefabInstance: {fileID: 260152062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1746585587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,6 +1677,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healer
       objectReference: {fileID: 0}
+    - target: {fileID: 3754883541030238045, guid: 5a1841a5ae997424a839be0d5ef3bc6b, type: 3}
+      propertyPath: fillImage
+      value: 
+      objectReference: {fileID: 1363202404}
+    - target: {fileID: 3754883541030238045, guid: 5a1841a5ae997424a839be0d5ef3bc6b, type: 3}
+      propertyPath: targetHealth
+      value: 
+      objectReference: {fileID: 909669935}
     - target: {fileID: 3846481649702904459, guid: 5a1841a5ae997424a839be0d5ef3bc6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.35
