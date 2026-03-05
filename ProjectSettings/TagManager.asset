@@ -14,8 +14,8 @@ TagManager:
   - Player
   - Monster
   - Projectile
-  - 
-  - 
+  - Obstacle
+  - NonRaycastLayer
   - 
   - 
   - 
