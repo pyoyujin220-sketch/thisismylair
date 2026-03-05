@@ -4,6 +4,8 @@ public class MonsterBasic : MonoBehaviour
 {
     public string monsterClassName;
 
+  
+
     // Healer Reviver Archer Magician Tanker Astrologist Debuffer
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
