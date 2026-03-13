@@ -13,7 +13,8 @@ public class SlotMoving : MonoBehaviour
 
     int currentSlot = 1;
 
-    PlayerVisual playerVisual;
+    public PlayerVisual playerVisual;
+    public GameUIManager gameUIManager;
 
     //public Health currentBlockHp = slots[currentSlot].GetCurrentHp();
 
@@ -21,6 +22,10 @@ public class SlotMoving : MonoBehaviour
     void Start()
     {
         UpdatePosition();
+        if (gameUIManager==null)
+        {
+            gameUIManager = GetComponent<GameUIManager>();
+        }
     }
     // Update is called once per frame
     void Update()
@@ -40,6 +45,10 @@ public class SlotMoving : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             ToggleHide();
+        }
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            gameUIManager.UsePlayerSkill();
         }
     }
 

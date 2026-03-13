@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Title.unity
-    guid: e2ff4c8df00b4dc49ace8e427eb78160
-  - enabled: 1
     path: Assets/Scenes/Pyj_scene.unity
     guid: 312fa71305ad07a488f2ffdac1cfceab
   m_configObjects:

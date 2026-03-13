@@ -6,12 +6,17 @@ public class GameUIManager : MonoBehaviour
     public GameObject SettingCanvas;
     public GameObject gameoverCanvas;
     public GameObject crosshairCanvas;
+    public GameObject playerSkillCanvas;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         if(gameoverCanvas!=null)
         {
             gameoverCanvas.SetActive(false);
+        }
+        if (playerSkillCanvas == null)
+        {
+            playerSkillCanvas = GetComponent<GameObject>();
         }
     }
 
@@ -25,6 +30,17 @@ public class GameUIManager : MonoBehaviour
     void ContinueGame()
     {
         Time.timeScale = 1.0f;
+    }
+
+    public void Unenableplayerskillcanvas()
+    {
+        playerSkillCanvas.SetActive(false);
+    }
+
+    public void UsePlayerSkill()
+    {
+        playerSkillCanvas.SetActive(true);
+        Invoke(nameof(Unenableplayerskillcanvas), 1.0f);
     }
 
     public void ActiveUI()
