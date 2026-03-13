@@ -104,10 +104,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5361dcd24c36a74fa6a9765b9305bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterBasic
+  spriteRenderer: {fileID: 2331864523690322890}
   idleSprite: {fileID: 21300000, guid: e38c408b604a39845a63c1a10f26ac7c, type: 3}
   skillSprite: {fileID: 21300000, guid: 8a2f9e8c62ae67547bd234bc2e78780c, type: 3}
   bIsPlayerHitable: 0
-  spriteRenderer: {fileID: 2331864523690322890}
+  monsterData:
+    monsterClass: 6
+    skillCoolTime: 2
+    damage: 10
+    attackSpriteContinueTime: 0.5
 --- !u!61 &8337763025852595502
 BoxCollider2D:
   m_ObjectHideFlags: 0

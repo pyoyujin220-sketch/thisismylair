@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3846481649702904459}
-  - component: {fileID: 3754883541030238045}
   - component: {fileID: 3495811476011281780}
   - component: {fileID: 1901186394231157475}
   - component: {fileID: 7295852418730798978}
@@ -37,20 +36,6 @@ Transform:
   - {fileID: 2288573474118155725}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3754883541030238045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540343827278215119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a5dba3c3f8996479f13b7cc7a56db5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HPBar
-  targetHealth: {fileID: 0}
-  fillImage: {fileID: 0}
 --- !u!114 &3495811476011281780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,10 +201,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5361dcd24c36a74fa6a9765b9305bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterBasic
-  idleSprite: {fileID: -3152180383845805149, guid: 46d14c69bff29c546bc7e82e4d6e4ca7, type: 3}
+  spriteRenderer: {fileID: 7652353349881147603}
+  idleSprite: {fileID: 21300000, guid: d2770684d0e3ef04faf17d248bfa6508, type: 3}
   skillSprite: {fileID: 21300000, guid: a1c121d2229c31b46aceec687423eaa9, type: 3}
   bIsPlayerHitable: 0
-  spriteRenderer: {fileID: 7652353349881147603}
+  monsterData:
+    monsterClass: 3
+    skillCoolTime: 2
+    damage: 0
+    attackSpriteContinueTime: 0.5
 --- !u!1001 &6676536365296955032
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class SlotMoving : MonoBehaviour
 
     int currentSlot = 1;
 
-    PlayerVisual playerVisual;
+    public PlayerVisual playerVisual;
 
     //public Health currentBlockHp = slots[currentSlot].GetCurrentHp();
 
