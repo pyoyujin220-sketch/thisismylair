@@ -50,7 +50,10 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Fire();
+            if (Time.timeScale >= 1.0f)
+            {
+                Fire();
+            }
         }
     }
 }

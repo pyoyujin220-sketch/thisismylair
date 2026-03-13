@@ -25,7 +25,7 @@ public class StageTimer : MonoBehaviour
             isTimerRunning = false;
             UpdateTimerDisplay();
 
-            // 지정된 함수들을 실행!
+            // 지정된 함수들을 실행
             onTimerEnd?.Invoke();
         }
     }

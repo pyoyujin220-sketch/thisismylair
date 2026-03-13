@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameUIManager
   SettingCanvas: {fileID: 1916725684}
   gameoverCanvas: {fileID: 1056263875}
+  crosshairCanvas: {fileID: 611645583}
 --- !u!4 &47031188
 Transform:
   m_ObjectHideFlags: 0
@@ -1039,8 +1040,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tanker
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8228052031224365581, guid: 8afaee22afd65ee41b9008b70723ee20, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1695,6 +1695,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1071391033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982963775556525246, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639622970655324344, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
+      propertyPath: m_Name
+      value: Swordsman
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e22ce4163eb460a4b9d39300c1228d7a, type: 3}
 --- !u!1 &1140028302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,8 +3785,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Astrologist
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8228052031224365581, guid: daabcdc0dd0bf774dbe79085d739ab60, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3851,10 +3907,11 @@ SceneRoots:
   - {fileID: 788318467}
   - {fileID: 242422114}
   - {fileID: 611645587}
-  - {fileID: 923721634}
   - {fileID: 706011140}
   - {fileID: 2090445366}
   - {fileID: 1557479313}
+  - {fileID: 1071391033}
+  - {fileID: 923721634}
   - {fileID: 47031188}
   - {fileID: 875454361}
   - {fileID: 2124656019}

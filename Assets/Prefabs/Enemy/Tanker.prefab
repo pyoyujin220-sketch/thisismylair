@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5166534865673803979}
   - component: {fileID: 4260675071771578754}
+  - component: {fileID: 7776744361687375840}
   m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
@@ -90,6 +91,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7776744361687375840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4442595476182278779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5361dcd24c36a74fa6a9765b9305bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterBasic
+  idleSprite: {fileID: 21300000, guid: 1a078b4aece224548b883efe5489a972, type: 3}
+  skillSprite: {fileID: 21300000, guid: e4f22f4430a2d3144b66f928d42289f3, type: 3}
+  bIsPlayerHitable: 0
+  spriteRenderer: {fileID: 4260675071771578754}
 --- !u!1 &8639622970655324344
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +117,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1982963775556525246}
   - component: {fileID: 8356488400166728147}
-  - component: {fileID: 8228052031224365581}
   - component: {fileID: 2308133371957917754}
   - component: {fileID: -6757850481463741947}
   m_Layer: 7
@@ -141,21 +157,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHP: 100
   currentHP: 100
---- !u!114 &8228052031224365581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8639622970655324344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d4969004b939404eaa9990f2adb15fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::hang_around
-  moveSpeed: 2
-  leftLimit: -4
-  rightLimit: 4
 --- !u!65 &2308133371957917754
 BoxCollider:
   m_ObjectHideFlags: 0

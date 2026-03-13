@@ -123,6 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2288573474118155725}
   - component: {fileID: 7652353349881147603}
+  - component: {fileID: 5163918088785322983}
   m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
@@ -203,6 +204,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5163918088785322983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6253077886612612905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5361dcd24c36a74fa6a9765b9305bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterBasic
+  idleSprite: {fileID: -3152180383845805149, guid: 46d14c69bff29c546bc7e82e4d6e4ca7, type: 3}
+  skillSprite: {fileID: 21300000, guid: a1c121d2229c31b46aceec687423eaa9, type: 3}
+  bIsPlayerHitable: 0
+  spriteRenderer: {fileID: 7652353349881147603}
 --- !u!1001 &6676536365296955032
 PrefabInstance:
   m_ObjectHideFlags: 0
